@@ -6,6 +6,9 @@
 
 const axios = require("axios");
 const express = require("express");
+const dotenv = require("dotenv"); // npm for .env file
+
+dotenv.config() // confing for .env file 
 
 
 const app = express(); 
@@ -23,4 +26,5 @@ const apiTokenFeniks = {
     apiFeniks: `${process.env.API_TOKEN_FENIKS}`,
     apiBaselinker: `${process.env.API_TOKEN_BASELINKER}`
 }
-console.log(apiTokenFeniks);
+
+console.log(apiTokenFeniks); // production delete latter
