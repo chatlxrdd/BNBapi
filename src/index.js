@@ -18,3 +18,9 @@ app.get("/", (req,res) => {
 app.listen(5000, () => {
     console.log("Server Started at 5000");
 })
+
+const apiTokenFeniks = {
+    apiFeniks: `${process.env.API_TOKEN_FENIKS}`,
+    apiBaselinker: `${process.env.API_TOKEN_BASELINKER}`
+}
+console.log(apiTokenFeniks);
