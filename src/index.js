@@ -6,12 +6,14 @@
 
 const axios = require("axios");
 const express = require("express");
+const dotenv = require("dotenv");
+dotenv.config();
 
 
-const app = express(); 
+const app = express();
 app.use(express.json());
 
-app.get("/", (req,res) => {
+app.get("/", (req, res) => {
     res.status(200).send("Hello World");
 })
 
