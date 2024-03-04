@@ -26,3 +26,9 @@ const apiTokenFeniks = {
     apiBaselinker: `${process.env.API_TOKEN_BASELINKER}`
 }
 console.log(apiTokenFeniks);
+
+function dupa() {
+    console.log(apiTokenFeniks);
+}
+
+dupa();
